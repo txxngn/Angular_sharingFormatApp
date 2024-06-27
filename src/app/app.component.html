@@ -1,0 +1,31 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<app-header [personal] = 'mydata' [sheridan] = 'school'></app-header>
+
+<mat-tab-group mat-stretch-tabs class="example-stretched-tabs mat-elevation-z4" [ngStyle]="{textAlign: 'center'}">
+
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="star"></mat-icon>
+      Personal
+    </ng-template>
+
+    <app-new-personal [personal] = 'mydata' [sheridan] = 'school'></app-new-personal>
+
+  </mat-tab>
+
+
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+      Sheridan
+    </ng-template>
+
+    <app-new-sheridan [personal] = 'mydata' [sheridan] = 'school'></app-new-sheridan>
+
+  </mat-tab>
+
+</mat-tab-group>
+
+
+<app-footer></app-footer>

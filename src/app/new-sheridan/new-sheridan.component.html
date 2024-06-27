@@ -1,0 +1,34 @@
+<section>
+    <h4 id="sheridanH4">
+        <strong>Sheridan Info for {{personal.first}} {{personal.last}}</strong> ...
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUhs89DP32vfiSUmlB5YSzrn22ldCGhFEZ0dbIZB_86w&s"
+            width="40px">
+    </h4>
+    <div>
+        <section style="display: flex;">
+            <div style="flex:1;"><strong>My Sheridan ID:</strong></div>
+            <div style="flex:1;"> {{sheridan.id}}</div>
+
+        </section>
+        <section style="display: flex;">
+            <div style="flex:1;"><strong>My Sheridan Login Name:</strong>
+            </div>
+            <div style="flex:1;"> {{sheridan.login}} </div>
+        </section>
+
+        <section style="display: flex;">
+            <div style="flex:1;">
+                <strong>My Sheridan Email:</strong>
+            </div>
+
+            <div style="flex:1;" [ngClass]="{myemail: sheridan.email === 'ngquocth@sheridan.ca'}"> 
+                {{sheridan.email}}
+            </div> <!--nếu email trong ' ' trùng với email của sheridan.email (true) thì css của ngClass mới áp dụng cho myemail-->
+
+        </section>
+
+        <p [ngClass]="{other: sheridan.email != ademail}"> > <!--Nếu k trùng (true) thì css dc áp dụng cho .other-->
+            Sheridan Advising: {{ademail}}</p>
+
+    </div>
+</section>

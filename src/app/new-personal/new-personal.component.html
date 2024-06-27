@@ -1,0 +1,60 @@
+<section>
+    <div> <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/006.png" width="75px">
+    </div>
+    <div>
+        <p><strong>My Personal Info:</strong></p>
+        <section style="display: flex;">
+            <div style="flex:1;"><strong>My Name: {{personal.first}} {{personal.last}}</strong></div>
+            <div style="flex:1;"></div>
+            <!-- To Include Last, First -->
+            {{personal.first}} {{personal.last}}
+        </section>
+        <section style="display: flex;">
+            <div style="flex:1;"><strong>My Home Country:</strong>
+            </div>
+            <div style="flex:1;"></div>
+            {{personal.country}}
+        </section>
+        <hr>
+
+        <!--Add Buttons-->
+        <section>
+            <div class="example-label">Raised</div>
+            <div class="example-button-row">
+                <button mat-raised-button>Basic</button>
+                <button mat-raised-button color="primary">Primary</button>
+                <button mat-raised-button color="accent">Accent</button>
+                <button mat-raised-button color="warn">Warn</button>
+                <button mat-raised-button disabled>Disabled</button>
+                <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
+            </div>
+        </section>
+        <mat-divider></mat-divider>
+        <section>
+            <div class="example-label">Stroked</div>
+            <div class="example-button-row">
+                <button mat-stroked-button>Basic</button>
+                <button mat-stroked-button color="primary">Primary</button>
+                <button mat-stroked-button color="accent">Accent</button>
+                <button mat-stroked-button color="warn">Warn</button>
+                <button mat-stroked-button disabled>Disabled</button>
+                <a mat-stroked-button href="https://www.google.com/" target="_blank">Link</a>
+            </div>
+        </section>
+        <mat-divider></mat-divider>
+        <section>
+            <div class="example-label">Flat</div>
+            <div class="example-button-row">
+                <button mat-flat-button>Basic</button>
+                <button mat-flat-button color="primary">Primary</button>
+                <button mat-flat-button color="accent">Accent</button>
+                <button mat-flat-button color="warn">Warn</button>
+                <button mat-flat-button disabled>Disabled</button>
+                <a mat-flat-button href="https://www.google.com/" target="_blank">Link</a>
+            </div>
+        </section>
+
+
+
+    </div>
+</section>
